@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ConvoPlay | The Art of Conversational Courage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#ba7ef4",
+                        "primary": "#2e0052",
+                        "tertiary-container": "#482b00",
+                        "surface": "#f9f9f9",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#2f3131",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary-fixed-variant": "#004d62",
+                        "tertiary-fixed-dim": "#ffb95c",
+                        "outline": "#7d7483",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#4c4451",
+                        "on-primary-fixed-variant": "#622599",
+                        "on-surface": "#1a1c1c",
+                        "surface-tint": "#7b41b3",
+                        "secondary": "#0c6780",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#baeaff",
+                        "primary-fixed-dim": "#ddb7ff",
+                        "on-secondary-container": "#09657f",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-secondary-fixed": "#001f29",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#89d0ed",
+                        "secondary-container": "#9ae1ff",
+                        "on-primary-fixed": "#2c0050",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "primary-container": "#4b0082",
+                        "tertiary": "#2b1800",
+                        "surface-container-low": "#f3f3f3",
+                        "inverse-primary": "#ddb7ff",
+                        "surface-dim": "#dadada",
+                        "on-tertiary-container": "#d58900",
+                        "tertiary-fixed": "#ffddb7",
+                        "primary-fixed": "#f0dbff",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary-fixed": "#2a1700",
+                        "outline-variant": "#cec3d3",
+                        "surface-container": "#eeeeee",
+                        "on-background": "#1a1c1c",
+                        "background": "#f9f9f9",
+                        "surface-bright": "#f9f9f9",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<a class="font-['Newsreader'] italic text-2xl font-black text-[#4B0082] dark:text-[#9ae1ff]" href="#">ConvoPlay</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Newsreader'] font-bold text-lg tracking-tight text-[#4B0082] dark:text-[#9ae1ff] border-b-2 border-[#4B0082] pb-1" href="#">Home</a>
+<a class="font-['Newsreader'] font-bold text-lg tracking-tight text-slate-600 dark:text-slate-400 hover:text-[#4B0082] transition-colors" href="#">About</a>
+<a class="font-['Newsreader'] font-bold text-lg tracking-tight text-slate-600 dark:text-slate-400 hover:text-[#4B0082] transition-colors" href="#">Experiences</a>
+<a class="font-['Newsreader'] font-bold text-lg tracking-tight text-slate-600 dark:text-slate-400 hover:text-[#4B0082] transition-colors" href="#">Podcast</a>
+<a class="font-['Newsreader'] font-bold text-lg tracking-tight text-slate-600 dark:text-slate-400 hover:text-[#4B0082] transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-md font-bold hover:bg-primary-container transition-all Active:opacity-80 Active:scale-95 text-sm uppercase tracking-widest">
+                Keep Me In The Conversation
+            </button>
+</div>
+<div class="bg-surface_container_low h-px w-full"></div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-24 overflow-hidden bg-gradient-to-br from-primary to-primary-container text-on-primary">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<h1 class="text-6xl md:text-8xl leading-[1.1] mb-8 font-black">
+                    The Conversation You <span class="italic font-light">Keep Not Having</span> Is The One That Changes Everything.
+                </h1>
+<p class="text-xl md:text-2xl font-light text-secondary-container mb-6 max-w-2xl leading-relaxed">
+                    Conversational Courage is not about being fearless. It is about being done paying the price for staying silent.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 items-start sm:items-center mt-12">
+<button class="px-10 py-5 bg-on-primary-container text-primary font-black rounded-lg shadow-lg hover:translate-y-[-2px] transition-transform text-lg">
+                        Keep Me In The Conversation
+                    </button>
+<p class="text-sm font-label uppercase tracking-[0.2em] opacity-80 max-w-[200px]">
+                        Welcome to ConvoPlay — where women come to have the conversations that matter most.
+                    </p>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-tl-[8rem] rounded-br-none overflow-hidden shadow-2xl relative group">
+<img alt="Visionary Black woman leader" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Stunning close-up portrait of a professional Black woman with a confident expression, wearing vibrant indigo blazer, soft studio lighting, high fashion editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtwmgKletNTDv8K4jLn4K1XVoepWP49IMFY1dRLFFMSuM8D2RC0oDCzkM6WkTO2NpPlmHFGRiYit8FZ331zkmJDuIy8fJBUtbE6R_y1Bj-zXUGuBweavlY1YwuRh8jujtwqtpjcXTaBH3w69JnLUh41UoUp7vmi6BftqDsFUPnIfse5spKENri3zTUrvCrp6irgnvVewb8fxHnvwvPnJ4u43bTnmU2ej1L26-1xbQxojU-hsO5s9NwKbMkSiKDxOkjsYZc890A4iM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+</div>
+<div class="absolute -bottom-6 -left-6 p-8 bg-surface_container_lowest text-primary rounded-xl shadow-xl hidden md:block">
+<span class="text-5xl font-black italic block mb-2">90%</span>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Of progress is locked behind silence</span>
+</div>
+</div>
+</div>
+</header>
+<!-- The Cost of Silence Section (Insight Quote Pattern) -->
+<section class="py-24 bg-surface">
+<div class="max-w-5xl mx-auto px-8">
+<div class="flex flex-col items-center text-center mb-16">
+<span class="text-secondary font-label uppercase tracking-[0.3em] text-sm mb-4">The Real Cost</span>
+<h2 class="text-4xl md:text-5xl font-bold text-primary max-w-3xl">What are you losing by not speaking?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="p-8 bg-surface-container-low rounded-xl border-l-4 border-secondary-container">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="priority_high">priority_high</span>
+<h3 class="text-2xl font-bold text-primary mb-3">Professional Stagnation</h3>
+<p class="text-on-surface-variant leading-relaxed">Opportunities don't go to those who wait; they go to those who articulate.</p>
+</div>
+<div class="p-8 bg-surface-container-low rounded-xl border-l-4 border-secondary-container">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="heart_broken">heart_broken</span>
+<h3 class="text-2xl font-bold text-primary mb-3">Relational Friction</h3>
+<p class="text-on-surface-variant leading-relaxed">Resentment grows in the gap between what is felt and what is expressed.</p>
+</div>
+<div class="p-8 bg-surface-container-low rounded-xl border-l-4 border-secondary-container">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="psychology">psychology</span>
+<h3 class="text-2xl font-bold text-primary mb-3">Internal Burnout</h3>
+<p class="text-on-surface-variant leading-relaxed">The heaviest weight a woman carries is the words she swallows.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- What ConvoPlay Is (Asymmetric Bento Grid) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<h2 class="text-5xl font-black text-primary leading-tight">What ConvoPlay Is</h2>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-l-4 border-primary-container">
+<p class="text-xl leading-relaxed text-on-surface italic font-headline">
+                            "ConvoPlay is the practice ground for the high-stakes game of your life. We provide the safety to be brave, the tools to be sharp, and the community to be heard."
+                        </p>
+</div>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-secondary-container p-2 bg-secondary rounded-full" data-icon="check_circle">check_circle</span>
+<div>
+<strong class="text-primary block text-lg">Curated Spaces</strong>
+<span class="text-on-surface-variant">Small groups of high-level women leaders in deep dialogue.</span>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-secondary-container p-2 bg-secondary rounded-full" data-icon="school">school</span>
+<div>
+<strong class="text-primary block text-lg">Skill Architecture</strong>
+<span class="text-on-surface-variant">Building the neural pathways for radical honesty and executive presence.</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="rounded-2xl overflow-hidden aspect-square">
+<img class="w-full h-full object-cover" data-alt="Group of stylish Black women in a professional setting having an intense but joyful conversation, warm lighting, office penthouse background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4340qPCcAjrPoUf7SO_9iD7YdCJ3sBI7Z6vhlkOEz2585JyVF6Fl2xDuapX8iVy-c64v2nh33J3dNYJlkT9u5bJx8ZWanW6UGFBvrg17QdXL9DGwBHCMf9kbPT7E4oA1qFBdQk4p1HJuqLt4Nc3ciuFWVHZxTPFWg6-_OuSHCd9nzZu7qHaD_TpIwm5mtIf5WguhCn6kS80akOmABx66i3B1HOrW7A5QvtDaricnEf3OVTliw0xZw2xN7RNMgv6Vn0tWtXP5ybGs"/>
+</div>
+<div class="rounded-2xl overflow-hidden aspect-[3/4] mt-8">
+<img class="w-full h-full object-cover" data-alt="Two professional Black women shaking hands and smiling warmly, professional attire, modern minimalist office, bright natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjz7Oc95BVo2AGf2f-VtsUEXGINP7ow3XsLeI_dQH0j8gbimIVQLb46DyAzarTUyMorf3fksdg9pNq886hSzz6knzMb3ZOSZzhvlYJlgg7-MzWeBQjDfAVXCZXZWwc_aVcBgpVfc3NysGTBr-wYI-y9FqwVU8LjMjoP4SPEfVZHehBK-irmGva47YeHV6U9IkSEt8DWRR6sUwHQSfZHlwz-LM_5e1LQwWOs_U1KMtEEZXrnxPZj4p1J-UpbWnjFiJPK18GWcTkXTQ"/>
+</div>
+<div class="rounded-2xl overflow-hidden aspect-[4/3] -mt-12 col-span-2">
+<img class="w-full h-full object-cover" data-alt="Successful Black woman executive presenting to a small group with confidence, focus on her expressive hands and engaged smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2fK0fdRF3nK8oqBeLYZt6U2Dx0xvjcli2mvVJ7RVQnXUu5GisSTZ4SdzW58IQ0717OO2XS-O3CYWrxZ1CEUp11KRp3lhcTj5Pjup6twRw7umpC4WeK8QQTgagoxEGFzpCAKHxB5wDs0P0Rr7nrN9AAKCwcxo06EcbXVKaCv3biNKkebh_O0FqssL_ALTd7NR1Gw0_FuqlXdUmr6IsSAXPH2X5_aM1CTfIwWeoQQCUiFZ6AJkgP6H8bCHkOrbI6TPmlC-rfIKQH5Q"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Laya Kelley Section -->
+<section class="py-32 bg-white relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="flex flex-col lg:flex-row gap-20 items-center">
+<div class="w-full lg:w-1/2 relative">
+<div class="aspect-square bg-secondary-container absolute -top-8 -left-8 w-48 h-48 rounded-full opacity-50 blur-3xl"></div>
+<div class="relative z-10 rounded-tr-[12rem] rounded-bl-[4rem] overflow-hidden border-[12px] border-surface">
+<img alt="Laya Kelley" class="w-full h-full object-cover scale-110" data-alt="Warm and approachable portrait of Laya Kelley, a sophisticated Black woman with a bright smile, wearing soft cream colors, natural sunset lighting in a garden setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtld2mN9F_JGDxVG-EBiMXzteGE4GeMwzM5HDz8VZkVYyxKVsXF0T4bBEGxDTunvJ1QyAsWtEZ6ihdtgsDDmeMf2L218YBnaDg7W0yJnkZkC7NwqHNN52Z_XwKCXKYKuNBcg1NZQE5Kq_1wnQAjvsNN8iLqg5UnhDK8yz1zyqA2DRnxfGaQc7NtAIaCv39GIjN7uS2g4z2V2mIxTmapLd4N0CFDfIiUNueCCw5bLPIcmAugUKTHQ_5xY1eAqFTus0XzKRPnS78EMA"/>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<span class="font-label text-secondary uppercase tracking-widest text-sm font-bold mb-4 block">Meet the Visionary</span>
+<h2 class="text-5xl font-black text-primary mb-8">Laya Kelley</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-8 font-light">
+                        Laya is the architect of ConvoPlay. Her mission is to help women reclaim their power through the spoken word. She believes that every barrier you face in leadership and life can be dismantled by the right conversation, had at the right time, with the right level of courage.
+                    </p>
+<div class="bg-secondary p-8 rounded-xl text-on-secondary">
+<p class="text-lg italic">"I created ConvoPlay because I was tired of watching brilliant women shrink themselves in rooms where they should have been steering the ship."</p>
+<p class="mt-4 font-bold uppercase tracking-widest text-xs">— LAYA KELLEY</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Experiences (Horizontal Scroll/Bento) -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 mb-16">
+<h2 class="text-5xl font-black text-primary text-center">The Experiences</h2>
+</div>
+<div class="flex overflow-x-auto pb-12 gap-8 px-8 no-scrollbar snap-x">
+<div class="min-w-[400px] snap-center bg-surface-container-lowest rounded-2xl overflow-hidden shadow-lg group">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110" data-alt="Intimate group of Black women leaders seated in high-end leather chairs in a circle, engaged in deep discussion, low warm indoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyoui7Wpi71vEsHav4Y4ep1OjWpyzfz_2NwCPyxdTFYWdhkL9FhknOXzf7jFdlyKUpv0WwtOLETWJanHcM53JucV7nZ_knCWw5f9I84yn-sjseYhDxDLeMQomJMpI8rNizbT_ozWGSyBOpPjKNkT0HPGYtt8uNfmYMbgoQxU8KQapRA2oIdspoXgZtmVLRwx9p-E5qWYYqbneQs4lC0x4ZYlR7DPR7AmDcWaq-YDF70cr9djHlk32_C0n1xYpVZHxOPWvMxerXuxU"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold text-primary mb-4">The Round Table</h3>
+<p class="text-on-surface-variant mb-6">A facilitated 2-day immersion for C-suite women to tackle their most difficult organizational conversations.</p>
+<a class="text-secondary font-bold flex items-center gap-2 hover:translate-x-2 transition-transform" href="#">Explore Experience <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</div>
+<div class="min-w-[400px] snap-center bg-surface-container-lowest rounded-2xl overflow-hidden shadow-lg group">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110" data-alt="Sophisticated workshop setting, Black woman facilitator pointing to a digital screen showing 'Courageous Dialogue' text, elegant atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwM1_aIbtM91XSOr8B44V8SccBJ0-kN-atxbWZIwySuhepkmDKieX96F12LeYIUTdQQJe3ezd0ZB1bAsVZDGeZmUdHt3FdlZJ2WI6ejH64wSx3Ba4mbNW-Wp1pCaREQC096gi-vG4MoI8oyBXMqrZQn1NyXXB_jfqnbbPqT4pUBkbdJtW3mM9tD0nciKX2BNr9bnw57IQ5naqUUvxwetcx7dW48JUqUuLynyhEsbRSr4wSne_59S_uwO1PfDIQe-OO3qN3KVjDMR8"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold text-primary mb-4">Courage Coaching</h3>
+<p class="text-on-surface-variant mb-6">1-on-1 intensive session to prepare for your "Next Level" talk—promotion, negotiation, or exit.</p>
+<a class="text-secondary font-bold flex items-center gap-2 hover:translate-x-2 transition-transform" href="#">Explore Experience <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</div>
+<div class="min-w-[400px] snap-center bg-surface-container-lowest rounded-2xl overflow-hidden shadow-lg group">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110" data-alt="Outdoor retreat for women, Black women walking together in a beautiful forest path talking and laughing, soft afternoon sun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4O_Jq3GxuyplSqnkTjwSXIwuxK83_dif8Hcwsx_jBj1eiNPk1tMWebObAMwPNXmjvwHn_QYrU2WGB1IxT4YAc9M6EmqzrPhXt11kqdlPjBfs54QBXqxmVXuB260MwnV2jI-qL_wnGUgDBPlIsKKzUcecrQzr163zX8jFTO96_3vpDV_Z-QW3VoTXIzoxMfPlxbMC9nxocfGLXZ5xx1IPOGqEKPt-OtShhxY5jTACNU5GJqdUqUaIeR9TLJEysrRm-2jm3qjYhV5k"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold text-primary mb-4">The Retreat</h3>
+<p class="text-on-surface-variant mb-6">Annual gathering of the ConvoPlay community. 4 days of silence, sound, and speaking your truth.</p>
+<a class="text-secondary font-bold flex items-center gap-2 hover:translate-x-2 transition-transform" href="#">Explore Experience <span class="material-symbols-outlined">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- The Podcast Section (Editorial Focus) -->
+<section class="py-32 bg-primary text-on-primary">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1">
+<div class="relative bg-secondary-container p-8 rounded-2xl">
+<img class="w-full aspect-square object-cover rounded-xl shadow-2xl" data-alt="Professional studio microphone with a Black woman in soft focus in the background wearing headphones, cinematic lighting with indigo and teal hues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfVfH070Ph9SMptW1HYW7GyKS4vD7S-oHUXt1L2SIj7kgxqbF89BetQn7Lv1o2D4oRgSed2ZNmhYYZR3q0Xys0QEEXK25Bq7WqY0K5tDBcNjRv4fPL7v2L2oIkUbHDt8RTkRaXgb2_MCT2G1dB3BkGNnvwFhCe70NUadwoFF05xHufDoRFWLOv_UgnDnxutBlCIAS_zoeOBTYx3AQn9_-hA8vI7EmY8mjI5FNjoENcJMAfZR975HYmfOrdzNZf__1ytK4fmCtbKg8"/>
+<button class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-on-primary-container p-6 rounded-full shadow-2xl hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-5xl" data-icon="play_arrow">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="order-1 lg:order-2 space-y-8">
+<span class="font-label text-secondary-container uppercase tracking-[0.4em] font-bold">Listen &amp; Learn</span>
+<h2 class="text-6xl font-black italic">The Podcast</h2>
+<p class="text-2xl font-headline italic text-on-primary-container">"Unspoken: The ConvoPlay Sessions"</p>
+<p class="text-lg opacity-80 leading-relaxed">
+                    Weekly deep dives into the psychology of silence and the liberation of voice. Featuring real-time coaching sessions and interviews with women who dared to say the hard thing.
+                </p>
+<div class="flex gap-4">
+<div class="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full">
+<span class="material-symbols-outlined text-sm" data-icon="podcast">podcasts</span>
+<span class="text-xs uppercase font-bold tracking-widest">Apple Podcasts</span>
+</div>
+<div class="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full">
+<span class="material-symbols-outlined text-sm" data-icon="radio">radio</span>
+<span class="text-xs uppercase font-bold tracking-widest">Spotify</span>
+</div>
+</div>
+<button class="text-secondary-container font-black flex items-center gap-3 text-xl hover:translate-x-2 transition-transform">
+                    Listen To Latest Episodes <span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 bg-white">
+<div class="max-w-4xl mx-auto px-8 text-center">
+<h2 class="text-5xl md:text-7xl font-black text-primary mb-8 leading-tight">Ready to stop paying the price of silence?</h2>
+<p class="text-xl md:text-2xl text-on-surface-variant mb-12 max-w-2xl mx-auto">
+                Join our collective of brave women and start having the conversations that change everything.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="px-12 py-6 bg-primary text-on-primary font-black rounded-lg text-xl shadow-2xl hover:shadow-primary/20 transition-all">
+                    Keep Me In The Conversation
+                </button>
+<button class="px-12 py-6 bg-surface-container-low text-primary border border-outline-variant font-black rounded-lg text-xl">
+                    View Experiences
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 border-t border-slate-100 dark:border-slate-800 bg-[#f9f9f9] dark:bg-slate-900">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="md:col-span-1">
+<a class="font-['Newsreader'] text-3xl font-bold text-[#4B0082]" href="#">ConvoPlay</a>
+<p class="mt-4 text-slate-500 lowercase tracking-tight">Close the gap. Be brave.</p>
+</div>
+<div class="grid grid-cols-2 gap-8 md:col-span-2">
+<div>
+<h4 class="font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest text-[#2e0052] dark:text-[#9ae1ff] mb-6 font-bold">Platform</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#4B0082] transition-transform hover:translate-x-1 inline-block" href="#">Home</a></li>
+<li><a class="text-slate-500 hover:text-[#4B0082] transition-transform hover:translate-x-1 inline-block" href="#">About</a></li>
+<li><a class="text-slate-500 hover:text-[#4B0082] transition-transform hover:translate-x-1 inline-block" href="#">Experiences</a></li>
+<li><a class="text-slate-500 hover:text-[#4B0082] transition-transform hover:translate-x-1 inline-block" href="#">Podcast</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest text-[#2e0052] dark:text-[#9ae1ff] mb-6 font-bold">Connect</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#4B0082] transition-transform hover:translate-x-1 inline-block" href="#">Instagram</a></li>
+<li><a class="text-slate-500 hover:text-[#4B0082] transition-transform hover:translate-x-1 inline-block" href="#">LinkedIn</a></li>
+<li><a class="text-slate-500 hover:text-[#4B0082] transition-transform hover:translate-x-1 inline-block" href="#">Spotify</a></li>
+<li><a class="text-slate-500 hover:text-[#4B0082] transition-transform hover:translate-x-1 inline-block" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest text-[#2e0052] dark:text-[#9ae1ff] mb-6 font-bold">Newsletter</h4>
+<div class="flex gap-2">
+<input class="bg-surface-container-highest border-none rounded-lg w-full text-sm" placeholder="Email address" type="email"/>
+<button class="bg-primary p-2 rounded-lg text-on-primary">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-20 pt-8 border-t border-slate-200">
+<p class="font-['Be_Vietnam_Pro'] text-xs uppercase tracking-widest text-slate-400">© 2024 ConvoPlay. Close the Gap. Be BRAVE.</p>
+</div>
+</footer>
+</body></html>

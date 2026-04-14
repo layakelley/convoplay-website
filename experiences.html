@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,700;0,800;1,400;1,800&amp;family=Be+Vietnam+Pro:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#ba7ef4",
+                        "primary": "#2e0052",
+                        "tertiary-container": "#482b00",
+                        "surface": "#f9f9f9",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#2f3131",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary-fixed-variant": "#004d62",
+                        "tertiary-fixed-dim": "#ffb95c",
+                        "outline": "#7d7483",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "on-surface-variant": "#4c4451",
+                        "on-primary-fixed-variant": "#622599",
+                        "on-surface": "#1a1c1c",
+                        "surface-tint": "#7b41b3",
+                        "secondary": "#0c6780",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#baeaff",
+                        "primary-fixed-dim": "#ddb7ff",
+                        "on-secondary-container": "#09657f",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-secondary-fixed": "#001f29",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#89d0ed",
+                        "secondary-container": "#9ae1ff",
+                        "on-primary-fixed": "#2c0050",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-tertiary-fixed-variant": "#653e00",
+                        "primary-container": "#4b0082",
+                        "tertiary": "#2b1800",
+                        "surface-container-low": "#f3f3f3",
+                        "inverse-primary": "#ddb7ff",
+                        "surface-dim": "#dadada",
+                        "on-tertiary-container": "#d58900",
+                        "tertiary-fixed": "#ffddb7",
+                        "primary-fixed": "#f0dbff",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary-fixed": "#2a1700",
+                        "outline-variant": "#cec3d3",
+                        "surface-container": "#eeeeee",
+                        "on-background": "#1a1c1c",
+                        "background": "#f9f9f9",
+                        "surface-bright": "#f9f9f9",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(76, 68, 81, 0.06);
+        }
+        .asymmetric-radius-1 { border-radius: 4rem 0.5rem 4rem 0.5rem; }
+        .asymmetric-radius-2 { border-radius: 0.5rem 4rem 0.5rem 4rem; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container">
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="font-['Newsreader'] italic text-2xl font-black text-[#4B0082] dark:text-[#9ae1ff]">
+                ConvoPlay
+            </div>
+<div class="hidden md:flex items-center space-gap-8 gap-x-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#4B0082] transition-colors font-['Newsreader'] font-bold text-lg tracking-tight" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#4B0082] transition-colors font-['Newsreader'] font-bold text-lg tracking-tight" href="#">About</a>
+<a class="text-[#4B0082] dark:text-[#9ae1ff] border-b-2 border-[#4B0082] pb-1 font-['Newsreader'] font-bold text-lg tracking-tight" href="#">Experiences</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#4B0082] transition-colors font-['Newsreader'] font-bold text-lg tracking-tight" href="#">Podcast</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-[#4B0082] transition-colors font-['Newsreader'] font-bold text-lg tracking-tight" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-md font-bold text-sm tracking-wide hover:opacity-90 active:scale-95 transition-all shadow-[0_2px_0_0_#1a0030]">
+                Keep Me In The Conversation
+            </button>
+</div>
+<div class="bg-surface_container_low h-px w-full"></div>
+</nav>
+<main class="pt-20">
+<section class="relative min-h-[870px] flex items-center overflow-hidden bg-primary text-on-primary">
+<div class="absolute inset-0 opacity-40">
+<img alt="Professional Black woman leader laughing gracefully in a sunlit modern glass-walled office at sunset" class="w-full h-full object-cover" data-alt="Stunning close-up portrait of a professional Black woman leader laughing gracefully in a sunlit modern glass-walled office during golden hour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDekGaLRWhjnfeMKOO-1rG_3Jm6c_keUWtZtWMf9qfBHu3F3nX1qtPEeKUMeluTs4ILgRKwsUvx477_SU_Q31p0hEnG6gB3oXmWsiS32R4FKIxR9wH8p8oFzCs2K4qv2IXOX2Ne6zPHPcpNfnupYS7PJO-1ZHXy1Ow9rB27SSRLFLNLd2ETyE284PzGgxW7vWWtlAZ-2-3eLruio-24_tcEa1RYUBWRNZeWBXiTC5rfLSkenjMjQYpfBlhHW4BCVD9YZCLn1er8_y4"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+<div class="relative max-w-7xl mx-auto px-8 w-full py-24">
+<div class="max-w-3xl">
+<span class="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container text-xs font-black uppercase tracking-[0.2em] mb-6 rounded-sm">
+                        Curated Experiences
+                    </span>
+<h1 class="font-headline text-7xl md:text-8xl font-black leading-[1.05] tracking-tighter mb-8 italic">
+                        Conversations <br/>Worth Having.
+                    </h1>
+<p class="text-xl md:text-2xl font-light text-secondary-fixed opacity-90 max-w-xl leading-relaxed">
+                        Redefining the architecture of connection for the modern woman leader. Where intellectual depth meets human warmth.
+                    </p>
+</div>
+</div>
+</section>
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-7 relative">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden asymmetric-radius-1 editorial-shadow">
+<img alt="Elegant group of professional Black women engaged in deep conversation at a lush garden table" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Group of five elegant professional Black women engaged in deep conversation at a lush outdoor garden table with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCftS8RZCSMzHOUez2ZBlYorqkQnjBWm9pGxIPhDYd69pPyJXOd-JtbY4D4w7LebThh_5nxmSMx6vPSWkZ4134CELRIgLa06z3GmWTW2Mcjsd8CUa8prEGFSbRgMA2b-lvaOBYFYbqnmBlxGoKQaY0t95d4M0BbXMtwDwgpm6G7I6kGeFzhAdX3r-i_cPheA6r01LOR9Woee2I8loapbdXp1oQwjNiRSfKfiZKdw53wynGaOCOjq3J4Su72CSOISv47_lfRGJX31c8"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-64 aspect-square bg-secondary-container p-8 asymmetric-radius-2 editorial-shadow flex flex-col justify-center">
+<span class="font-headline italic text-4xl text-on-secondary-container font-black leading-none">01</span>
+<span class="mt-4 font-bold text-on-secondary-container tracking-widest text-xs uppercase">The Gathering</span>
+</div>
+</div>
+<div class="md:col-span-5 space-y-8">
+<div class="space-y-4">
+<h2 class="font-headline text-5xl font-black text-primary leading-tight">KinFluence</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed font-light">
+                                Our signature in-person gathering. An intimate, high-vibrancy retreat designed for the woman who leads by day and seeks depth by night. No stages, no panels—just the power of shared presence.
+                            </p>
+</div>
+<ul class="space-y-4 border-l-4 border-secondary-container pl-8 italic text-primary font-medium">
+<li>Curated boutique locations</li>
+<li>Facilitated brave dialogue</li>
+<li>Intergenerational wisdom circles</li>
+</ul>
+<div class="pt-4">
+<a class="inline-flex items-center gap-3 text-secondary font-bold uppercase tracking-widest text-sm group" href="#waitlist">
+                                Discover More 
+                                <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row-reverse gap-16 items-center">
+<div class="md:w-1/2">
+<div class="aspect-square bg-white overflow-hidden rounded-full border-[12px] border-white editorial-shadow">
+<img alt="Confident Black woman with natural hair smiling warmly into a webcam in a stylish home office" class="w-full h-full object-cover" data-alt="Close up of a confident Black woman with natural hair smiling warmly into her laptop camera in a stylish minimalist home office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdMdA6mJiedBtlBM_BrQvaxW8_Dg4VcVGZKVrwUuGciuMCsqsnCMH5oHrQbKE3Py42kGv4wj3j5toBvb7SCWhSfEQN1OSdK930FaJ9IiR6ECnf4pAwevb4d0H718zGkY9ShfAnJTILDciAhFNFfDcAtpPDbScv_TAZrAeWseIaNkdpsEtuxarxL_V4SamLQJYehsfJwoqteS2pazacpkZLqRsrDHoEp2ZfEZCxAp6cQXOGfKUtUILlEw56YyzxpabM0WefIb4X51w"/>
+</div>
+</div>
+<div class="md:w-1/2 space-y-12">
+<div class="space-y-4">
+<h2 class="font-headline text-5xl font-black text-primary leading-tight">Conversation Gatherings</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed font-light">
+                                The digital hearth. Virtual, high-intent spaces where we bridge the gap. Our virtual gatherings use proprietary conversation prompts to bypass small talk and move directly into the heart of things.
+                            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="p-8 bg-surface-container-lowest editorial-shadow rounded-xl">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="videocam">videocam</span>
+<h3 class="font-bold text-primary mb-2">Bi-Weekly Syncs</h3>
+<p class="text-sm text-on-surface-variant">Global connections from the comfort of your curated space.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest editorial-shadow rounded-xl">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="font-bold text-primary mb-2">Curated Matches</h3>
+<p class="text-sm text-on-surface-variant">Algorithms that prioritize soul-alignment over job titles.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-32 bg-white relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="max-w-4xl mx-auto text-center space-y-8">
+<h2 class="font-headline text-6xl font-black text-primary leading-[1.1]">The Insight Quote</h2>
+<blockquote class="relative py-12 px-12 md:px-24">
+<span class="absolute top-0 left-0 text-[10rem] font-headline text-secondary-container leading-none opacity-40 select-none">“</span>
+<p class="font-headline text-4xl md:text-5xl italic text-primary leading-tight relative z-20">
+                            Leadership isn't about having all the answers; it's about being brave enough to sit in the questions with others.
+                        </p>
+<cite class="block mt-8 text-secondary font-bold uppercase tracking-[0.3em] text-sm not-italic">— BRAVE ARCHITECTURE</cite>
+</blockquote>
+</div>
+</div>
+<div class="absolute top-1/2 left-0 w-32 h-64 bg-secondary-container/20 rounded-r-full blur-3xl"></div>
+<div class="absolute bottom-0 right-0 w-64 h-32 bg-primary-container/10 rounded-t-full blur-3xl"></div>
+</section>
+<section class="py-32 bg-primary" id="waitlist">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden editorial-shadow flex flex-col md:flex-row">
+<div class="md:w-5/12 bg-secondary p-12 md:p-20 text-on-secondary flex flex-col justify-between">
+<div>
+<h2 class="font-headline text-5xl font-black mb-6 leading-none">Stay In The Conversation</h2>
+<p class="text-secondary-fixed-dim text-lg opacity-80 leading-relaxed">
+                                Our experiences are intentionally intimate and fill quickly. Join the waitlist to be first in line for the next KinFluence retreat.
+                            </p>
+</div>
+<div class="mt-12 space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined" data-icon="check_circle">check_circle</span>
+<span class="text-sm font-medium tracking-wide">Priority Booking</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined" data-icon="check_circle">check_circle</span>
+<span class="text-sm font-medium tracking-wide">Exclusive Insights</span>
+</div>
+</div>
+</div>
+<div class="md:w-7/12 p-12 md:p-20">
+<form class="space-y-10" onsubmit="event.preventDefault()">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="relative">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">First Name</label>
+<input class="w-full bg-transparent border-b-2 border-surface-container-highest focus:border-primary transition-colors py-2 outline-none placeholder:text-surface-variant" placeholder="Janelle" type="text"/>
+</div>
+<div class="relative">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Last Name</label>
+<input class="w-full bg-transparent border-b-2 border-surface-container-highest focus:border-primary transition-colors py-2 outline-none placeholder:text-surface-variant" placeholder="Monae" type="text"/>
+</div>
+</div>
+<div class="relative">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Email Address</label>
+<input class="w-full bg-transparent border-b-2 border-surface-container-highest focus:border-primary transition-colors py-2 outline-none placeholder:text-surface-variant" placeholder="janelle@visionary.com" type="email"/>
+</div>
+<div class="relative">
+<label class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Preferred Experience</label>
+<select class="w-full bg-transparent border-b-2 border-surface-container-highest focus:border-primary transition-colors py-2 outline-none appearance-none">
+<option>KinFluence (In-Person)</option>
+<option>Virtual Gatherings</option>
+<option>Both</option>
+</select>
+</div>
+<div class="pt-6">
+<button class="w-full md:w-auto px-12 py-5 bg-primary text-on-primary font-black uppercase tracking-[0.2em] text-sm rounded-md shadow-[0_4px_0_0_#1a0030] hover:translate-y-[-2px] hover:shadow-[0_6px_0_0_#1a0030] transition-all" type="submit">
+                                    Request Access
+                                </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[#f9f9f9] dark:bg-slate-900 w-full pt-20 pb-10 border-t border-slate-100 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="md:col-span-1 space-y-6">
+<div class="font-['Newsreader'] text-3xl font-bold text-[#4B0082]">ConvoPlay</div>
+<p class="font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest text-slate-500">Close the Gap. Be BRAVE.</p>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-bold text-primary text-xs uppercase tracking-widest mb-2">Explore</span>
+<a class="font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest text-slate-500 hover:text-[#4B0082] hover:translate-x-1 transition-transform duration-200" href="#">Home</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest text-slate-500 hover:text-[#4B0082] hover:translate-x-1 transition-transform duration-200" href="#">About</a>
+<a class="font-bold text-[#4B0082] font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest" href="#">Experiences</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-bold text-primary text-xs uppercase tracking-widest mb-2">Connect</span>
+<a class="font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest text-slate-500 hover:text-[#4B0082] hover:translate-x-1 transition-transform duration-200" href="#">Podcast</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest text-slate-500 hover:text-[#4B0082] hover:translate-x-1 transition-transform duration-200" href="#">Contact</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest text-slate-500 hover:text-[#4B0082] hover:translate-x-1 transition-transform duration-200" href="#">Instagram</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-bold text-primary text-xs uppercase tracking-widest mb-2">Community</span>
+<a class="font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest text-slate-500 hover:text-[#4B0082] hover:translate-x-1 transition-transform duration-200" href="#">LinkedIn</a>
+<a class="font-['Be_Vietnam_Pro'] text-sm uppercase tracking-widest text-slate-500 hover:text-[#4B0082] hover:translate-x-1 transition-transform duration-200" href="#">Spotify</a>
+<p class="mt-4 font-['Be_Vietnam_Pro'] text-[10px] text-slate-400">© 2024 ConvoPlay. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</footer>
+<button class="fixed bottom-8 right-8 w-16 h-16 bg-primary text-on-primary rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-40 group">
+<span class="material-symbols-outlined text-3xl" data-icon="forum">forum</span>
+<span class="absolute right-20 bg-primary text-on-primary px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">Start a Conversation</span>
+</button>
+</body></html>
